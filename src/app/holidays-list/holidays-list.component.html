@@ -1,0 +1,5 @@
+<ul>
+  <li *ngFor="let date of listOfHolidays | keys">
+    <a [routerLink]="['/details', date.key]">{{date.key}}</a>
+  </li>
+</ul>
